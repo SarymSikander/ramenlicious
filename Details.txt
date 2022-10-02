@@ -1,0 +1,72 @@
+Color Scheme:
+
+- Red #610d09
+- Yellow #ff9d00
+- Black #000
+- Blue #0a0b39
+- 
+
+.......................................................................................................
+
+Navigation Bar:
+
+logo 
+
+.......................................................................................................
+
+Section Details:
+
+Explore our Menu
+menu-item
+menu-item
+menu-item
+view complete menu
+
+.......................................................................................................
+
+Section Details:
+
+            Truck Schedule 
+
+(today *date*)      |      (tomorrow *date*)
+(today *date*)      |      (tomorrow *date*)
+
+.......................................................................................................
+
+Section Details:
+
+Bestselling Items
+
+.......................................................................................................
+
+Footer Details:
+
+1st div: Subscribe to Newsletter to keep getting our updates 
+
+2nd div: 
+
+    ABOUT THE FOOD TRUCK
+    The Food Truck on to the streets of Sonoma in December, 2012. And with it, they took Sonoma by storm with everyone’s favorite comfort food; grilled cheese sandwiches, tacos 
+    – only not quite as innocent as mom used to make!
+
+    
+    OPENING HOURS
+    Monday8am-10pm
+    Tuesday8am-10pm
+    Wednesday8am-10pm
+    Thursday8am-10pm
+    Friday11am-12pm
+    Saturday11am-12pm
+    Sunday11am-12pm
+
+    
+    CONNECT WITH US
+    435 Wandering Ct. Sonoma, CA
+    Reservations: (123) 456-7890
+    Catering: (123) 456-7890
+    contact@the-food-truck.com
+    (logos - insta, facebook, twitter, tiktok)
+
+
+
+.......................................................................................................

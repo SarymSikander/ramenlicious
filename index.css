@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+
+/* Stuff for JavaScript */
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.revealTop {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+.revealTop.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.revealRight {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+.revealRight.activeRight {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.revealLeft {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+.revealLeft.activeLeft {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* Stuff for JavaScript - End */
+
+
+header {
+    background: url("images/main.webp");
+    background-size: cover;
+    width: 100%;
+    max-height: 95vh;
+}
+
+.main-img {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 95vh;
+}
+
+nav {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+}
+
+nav .logo h1 {
+    padding: 8px;
+    margin: 8px 10px 10px 20px;
+    font-size: 2rem;
+}
+
+nav .logo a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #d6cdb4;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #d6cdb4;
+    font-size: 1.25rem;
+}
+
+nav li a:hover {
+    color: #d6cdb4;
+    border-bottom: 1px solid #d6cdb4;
+    transition: all 0.5s ease;
+}
+
+nav li a.active {
+    border-bottom: 1px solid #d6cdb4;
+}
+
+.logo {
+    width: 40%;
+    display: flex;
+}
+
+.options {
+    width: 60%;
+    padding: 8px;
+    margin: 0px auto;
+}
+
+.toggle-button {
+    position: absolute;
+    display: none;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    width: 21px;
+    margin: 20px 20px 1px 1px;
+}
+
+.bars {
+    width: 25px;
+    height: 3px;
+    background-color: #d6cdb4;
+    border-radius: 8px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.data {
+    width: 50%;
+    color: #d6cdb4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin: 8% 10% 0% 9%;
+    animation: onLoad 1.5s ease-in;
+}
+
+@keyframes onLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic {
+    width: 50%;
+    max-height: 100%;
+    margin: 2em;
+}
+
+.pic-details {
+    width: 40%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0b39;
+    color: #d6cdb4;
+    border-radius: 10%;
+    padding: 1%;
+    margin-left: -150px;
+}
+
+.pic img {
+    width: 100%;
+    height: 90vh;
+}
+
+.menu {
+    width: 100%;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em 1em 5em 1em;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 50%;
+    height: 30vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.card:hover {
+    border: 1px solid silver;
+    transform: scale(1.01)
+}
+
+.image {
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.details {
+    width: 50%;
+    height: 20vh;
+    padding: 0.7em;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20vh;
+}
+
+.booking {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/booking.webp");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.over {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-data {
+    width: 40%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e6ddc5;
+    border-radius: 10%;
+    padding: 1%;
+}
+
+.testomonials {
+    min-height: 130vh;
+    width: 100%;
+    background-color: #d6cdb4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testo-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em 1em 5em 1em;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    width: 40%;
+    height: 30vh;
+    border: 1px solid #610d09;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.review-image {
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.review-details {
+    width: 50%;
+    height: 20vh;
+    padding: 0.7em;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #d6cdb4;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter {
+    width: 100%;
+    height: 30vh;
+    background-color: #610d09;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+#frst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+#scnd {
+    height: 15vh;
+}
+
+#name {
+    width: 30em;
+    font-size: 1.1rem;
+}
+
+#email {
+    width: 30em;
+    font-size: 1.1rem;
+}
+
+
+#scnd > button {
+    margin: auto;
+}
+
+.foot {
+    width: 100%;
+    min-height: 65vh;
+    background-color: black;
+    display: flex;
+}
+
+.filler {
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex: 1;
+    order: 1;
+}
+
+.filler a {
+    padding: 20px;
+}
+
+.timing {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex: 1;
+    order: 2;
+}
+
+.links {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    flex: 1;
+    order: 3;
+}
+
+.links a {
+    font-size: 30px;
+    color: inherit;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #d6cdb4;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+}
+
+.fab {
+    color: #d6cdb4;
+}
+
+.copyright {
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 13px;
+    color: black;
+}
+
+
+/* Constant CSS */
+
+button {
+    width: 20em;
+    height: 4vh;
+    background-color: #e6ddc5;
+    border-radius: 4px;
+}
+
+button a {
+    font-size: 1.5em;
+    color: #610d09;
+}
+
+a:hover {
+    color: #610d09;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: chocolate;
+    transition: all 0.5s ease;
+}
+
+
+/* Media Queries for Homepage */
+
+@media (max-width: 940px) {
+    .toggle-button {
+        cursor: pointer;
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .options {
+        display: none;
+        width: 90%;
+    }
+
+    .options ul {
+        width: 90%;
+    }
+
+    .options li {
+        padding: 2px;
+        margin: 2px;
+        text-align: center;
+    }
+
+    .options li a {
+        padding: 2px;
+    }
+
+    .options.active {
+        display: flex;
+    }
+
+    .data {
+        width: 80%;
+        text-align: justify;
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .pic {
+        width: 90%;
+        height: 80%;
+    }
+
+    .pic-details {
+        width: 70%;
+        margin: 0;
+        margin-top: -100px;
+    }
+
+    .card {
+        width: 93%;
+        height: 30vh;
+    }
+
+    .image {
+        height: 20vh;
+    }
+
+    .booking-data {
+        width: 80%;
+    }
+    
+    .review {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .newsletter {
+        min-height: 40vh;
+        text-align: justify;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    
+    #frst {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+    }
+    
+    #scnd {
+        font-size: 0.8rem;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #name {
+        width: 15em;
+        font-size: 1.1rem;
+    }
+    
+    #email {
+        width: 15em;
+        font-size: 1.1rem;
+    }
+
+    .foot {
+        min-height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .filler {
+        padding: 20px;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    
+    .timing {
+        text-align: justify;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    
+    .links {
+        text-align: justify;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .copyright {
+        max-height: 5vh;
+        background-color: white;
+        position: relative;
+    }
+
+}
+
